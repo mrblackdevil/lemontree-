@@ -1,0 +1,860 @@
+* {
+  font-size: 16px;
+  color: #3c3c3c;
+  transition: all 0.5s;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  /* 1 - вертикальный скроллбар */
+}
+::-webkit-scrollbar:horizontal {
+  height: 5px;
+  /* 1 - горизонтальный скроллбар */
+}
+::-webkit-scrollbar-button {
+  background: #009245;
+  /* 2 - кнопка */
+}
+::-webkit-scrollbar-track {
+  background: #009245;
+  /* 3 - трек */
+}
+::-webkit-scrollbar-track-piece {
+  background: #009245;
+  /* 4 – видимая часть трека */
+}
+::-webkit-scrollbar-thumb {
+  background: #96ee21;
+  border-radius: 15px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  /* 5 - ползунок */
+}
+::selection {
+  background: #8cc63f;
+}
+::-moz-selection {
+  background: #8cc63f;
+}
+::-webkit-selection {
+  background: #8cc63f;
+  color: #8cc63f;
+}
+
+section .section-header {
+  margin-top: 200px;
+  margin-bottom: 50px;
+  font-family: "MerriBlack", sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+section .section-header h2 {
+  color: #009245;
+  font-size: 40px;
+}
+section .section-header h2 span {
+  color: #a1f039;
+  font-size: 40px;
+}
+section .section-header p {
+  font-family: "BadScript", sans-serif;
+  font-weight: 400;
+}
+.menu-box {
+  background: url(../img/hip-square.png);
+}
+.menu-box .products__name {
+  font-family: "MerriRegular", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #959595;
+}
+.menu-box .products__name span {
+  font-family: "MerriBold", sans-serif;
+  font-weight: 700;
+  color: #494949;
+}
+.menu-box .products__description {
+  padding-bottom: 20px;
+  font-family: "MerriLightItalick", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #000000;
+}
+#subscribe-food {
+  background: url(../img/farmer.png);
+}
+.reserv {
+  background: url(../img/ricepaper2.png);
+  padding-bottom: 50px;
+  text-align: center;
+}
+.reserv__list {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.reserv__data {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.reserv__item {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 15px 35px;
+  border: 1px solid #bcbcbc;
+}
+.reserv__item:hover {
+  border-color: #009245;
+  cursor: pointer;
+}
+.reserv__item:active {
+  border-color: #002c15;
+}
+.reserv__item--active {
+  border-color: #009245;
+}
+.reserv__item p {
+  float: right;
+  padding-left: 20px;
+  font-family: "MerriBold", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.reserv__item p:hover {
+  color: #e54116;
+}
+.reserv__images {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: url(../img/css_sprites.png) -10px -10px;
+}
+.reserv__images--img1 {
+  background: url(../img/css_sprites.png) -80px -10px;
+}
+.reserv__images--img2 {
+  background: url(../img/css_sprites.png) -10px -80px;
+}
+.reserv__images--img3 {
+  background: url(../img/css_sprites.png) -80px -80px;
+}
+.reserv__title {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 25px;
+  font-family: "BadScript", sans-serif;
+  font-weight: 400;
+  font-weight: 900;
+}
+.reserv__data input {
+  padding: 25px 0px;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #009245;
+  color: #3c3c3c;
+}
+.reserv__data select {
+  padding: 28.5px 0px;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #009245;
+  color: #3c3c3c;
+}
+.reserv__button {
+  margin-top: 10px;
+  padding: 20px 105px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "MerriBold";
+  background: #96ee21;
+  padding: 25px 55px;
+  color: #ffffff;
+}
+.reserv__button:hover {
+  background: #00df69;
+  color: #ffffff;
+}
+.reserv__button:active {
+  background: #009747;
+}
+.reserv__text {
+  text-align: center;
+  font-family: "MerriBold", sans-serif;
+  font-weight: 700;
+  padding-top: 33px;
+  text-transform: uppercase;
+}
+.special {
+  background: url(../img/handmadepaper.png);
+}
+.special__products {
+  background: #ffffff;
+  text-align: center;
+}
+.special img {
+  float: left;
+  width: 50%;
+}
+.special__text {
+  padding-top: 30px;
+}
+.special__text h4 {
+  font-family: "MerriBold", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.special__text p {
+  padding-top: 20px;
+  padding-bottom: 24px;
+  font-family: "MerriLight", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
+}
+.special__text b {
+  font-family: "MerriBlack", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+}
+.special__bottom-box {
+  display: inline-block;
+}
+.special__bottom-box img {
+  float: right;
+}
+.special__text-inner {
+  width: 50%;
+  float: left;
+  padding: 0;
+  margin: 0;
+  padding-top: 30px;
+  background: #ffffff;
+  text-align: center;
+}
+.special__text-inner h4 {
+  font-family: "MerriBold", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.special__text-inner p {
+  padding-top: 20px;
+  padding-bottom: 24px;
+  font-family: "MerriLight", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
+}
+.special__text-inner b {
+  font-family: "MerriBlack", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+}
+.advantages {
+  background: url(../img/ravenna.png);
+  text-align: center;
+}
+.advantages__images {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background: url(../img/css_sprites1.png) -10px -10px;
+}
+.advantages__images--link1 {
+  background: url(../img/css_sprites1.png) -180px -10px;
+}
+.advantages__images--link2 {
+  background: url(../img/css_sprites1.png) -10px -180px;
+}
+.advantages__images--link3 {
+  background: url(../img/css_sprites1.png) -180px -180px;
+}
+.advantages__images--link4 {
+  background: url(../img/css_sprites1.png) -350px -10px;
+}
+.advantages__images--link5 {
+  background: url(../img/css_sprites1.png) -350px -180px;
+}
+.advantages__images--link6 {
+  background: url(../img/css_sprites1.png) -10px -350px;
+}
+.advantages__images--link7 {
+  background: url(../img/css_sprites1.png) -180px -350px;
+}
+.advantages__inner {
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  border: 1px solid #009245;
+  cursor: pointer;
+}
+.advantages__inner:hover {
+  background: #e6e6e6;
+}
+.advantages__inner h4 {
+  padding-bottom: 10px;
+  font-family: "MerriBold", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.advantages__inner p {
+  font-family: "BadScript", sans-serif;
+  font-weight: 400;
+  font-weight: 900;
+}
+.main-contacts {
+  margin-top: 10%;
+  background: url(../img/contactsbg.png) no-repeat center center fixed;
+  background-color: #c3c3c3;
+  background-size: cover;
+}
+.main-contacts__social {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+}
+.main-contacts__social--images1 {
+  background: url(../img/css_sprites2.png) -177px -2px;
+}
+.main-contacts__social--images2 {
+  background: url(../img/css_sprites2.png) -152px -2px;
+}
+.main-contacts__social--images3 {
+  background: url(../img/css_sprites2.png) 49px -27px;
+}
+.main-contacts .section-header {
+  margin-top: 5%;
+}
+.main-contacts__adress h3 {
+  text-transform: uppercase;
+  color: #494949;
+}
+.main-contacts__adress a {
+  color: #3c3c3c;
+}
+.main-contacts__adress a:hover {
+  color: #009245;
+  text-decoration: none;
+}
+.main-contacts__form {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.main-contacts__form h3 {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  color: #494949;
+}
+.main-contacts__form input {
+  padding: 10px 0px;
+  margin-bottom: 20px;
+  font-family: "MerriBlack", sans-serif;
+  font-weight: 900;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 0.75px solid #96ee21;
+}
+.main-contacts__form input::placeholder {
+  color: #959595;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.main-contacts__form input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 150px #a1f039 !important;
+  /* Цвет фона */
+}
+.main-contacts__form textarea {
+  padding: 10px 125px;
+  margin-bottom: 20px;
+  font-family: "MerriBlack", sans-serif;
+  font-weight: 900;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 0.75px solid #96ee21;
+}
+.main-contacts__form textarea::placeholder {
+  color: #959595;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.main-contacts__form textarea:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 150px #a1f039 !important;
+  /* Цвет фона */
+}
+.main-contacts__form button {
+  margin-top: 10px;
+  padding: 20px 105px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "MerriBold";
+  background: #96ee21;
+  padding: 15px 90px;
+}
+.main-contacts__form button:hover {
+  background: #00df69;
+  color: #ffffff;
+}
+.main-contacts__form button:active {
+  background: #009747;
+}
+.main-contacts__form a {
+  display: block;
+  margin-top: 10px;
+  padding: 20px 105px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "MerriBold";
+  background: #96ee21;
+  padding: 15px 0px;
+  font-size: 14px;
+  white-space: nowrap;
+  text-align: center;
+  color: #3c3c3c;
+}
+.main-contacts__form a:hover {
+  background: #00df69;
+  color: #ffffff;
+}
+.main-contacts__form a:active {
+  background: #009747;
+}
+.main-contacts__form a:hover {
+  text-decoration: none;
+}
+footer {
+  text-align: center;
+  padding-top: 30px;
+  background: url(../img/footer_lodyas.png);
+}
+footer h4 {
+  color: #ffffff;
+  font-family: "BadScript", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+/* Стили для PopUP блока */
+#popup-main {
+  position: relative;
+  padding: 20px;
+  width: auto;
+  max-width: 400px;
+  margin: 20px auto;
+  background: #009245;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96ee21, #009245);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96ee21, #009245);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+}
+#popup-main h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "MerriLight", sans-serif;
+  font-weight: 300;
+}
+#popup-main input {
+  margin-bottom: 20px;
+  padding: 20px 71.5px;
+  font-family: "BadScript", sans-serif;
+  font-weight: 400;
+  font-weight: 900;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 0.75px solid #96ee21;
+  font-family: "MerriLight", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+#popup-main input::placeholder {
+  font-family: "BadScript", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+#popup-main input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 150px #a1f039 !important;
+  /* Цвет фона */
+}
+#popup-main input::placeholder {
+  font-family: "MerriLight", sans-serif;
+  font-weight: 300;
+  color: #3c3c3c;
+}
+#popup-main textarea {
+  margin-bottom: 20px;
+  padding: 20px 71.5px;
+  font-family: "BadScript", sans-serif;
+  font-weight: 400;
+  font-weight: 900;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 0.75px solid #96ee21;
+  font-family: "MerriLight", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+#popup-main textarea::placeholder {
+  font-family: "BadScript", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+#popup-main textarea:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 150px #a1f039 !important;
+  /* Цвет фона */
+}
+#popup-main textarea::placeholder {
+  font-family: "MerriLight", sans-serif;
+  font-weight: 300;
+  color: #3c3c3c;
+}
+#popup-main .main-form__inner__btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px 105px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "MerriBold";
+  background: #96ee21;
+  font-family: "MerriLight", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+#popup-main .main-form__inner__btn:hover {
+  background: #00df69;
+  color: #ffffff;
+}
+#popup-main .main-form__inner__btn:active {
+  background: #009747;
+}
+#popup-main .mfp-close {
+  color: #e54116;
+  font-family: "MerriLight", sans-serif;
+  font-weight: 300;
+  font-weight: 100;
+  font-size: 70px;
+}
+#popup-main .mfp-close:hover {
+  color: #591909;
+  transform: rotate(-180deg);
+}
+/* Для прочего */
+.hidden {
+  display: none;
+}
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+.video-container {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+}
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+.video-container video.fillWidth {
+  width: 100%;
+}
+.for-video-box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 25px;
+  background: url(../img/hip-square.png);
+  z-index: 9919;
+}
+.twb-tabs .fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+.twb-tabs .fade.in {
+  opacity: 1;
+}
+.twb-tabs .tab-content > .tab-pane {
+  display: none;
+}
+.twb-tabs .tab-content > .active {
+  display: block;
+}
+/* Кастомная тема табов, изменяйте на свой вкус или напишите свою*/
+.twb-tabs .twb-tablist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.twb-tabs .twb-tablist:before,
+.twb-tabs .twb-tablist:after {
+  content: '';
+  display: table;
+}
+.twb-tabs .twb-tablist:after {
+  clear: both;
+}
+.twb-tabs .twb-tablist li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.twb-tabs .twb-tablist li a {
+  position: relative;
+  display: block;
+  top: 1px;
+  text-decoration: none;
+  padding: 20px;
+  color: #3c3c3c;
+  border-bottom: 1px solid #898989;
+  border-right: 1px solid #d5d5d5;
+  border-left: 1px solid #d5d5d5;
+}
+.twb-tabs .twb-tablist li a:first-child {
+  border-top: 1px solid #d5d5d5;
+}
+.twb-tabs .twb-tablist li.active a,
+.twb-tabs .twb-tablist li a:hover,
+.twb-tabs .twb-tablist li a:focus,
+.twb-tabs .twb-tablist li a:active {
+  color: #333;
+  background: #fff;
+}
+.twb-tabs .twb-tablist li.active a {
+  z-index: 1;
+}
+.twb-tabs .twb-tab-content {
+  position: relative;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+/* базовый контейнер вкладок */
+ul.resp-tabs-list,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+.resp-tab-active {
+  background: #8cc63f;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96ee21, #8cc63f);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96ee21, #8cc63f);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.resp-tabs-list li {
+  display: inline-block;
+  float: left;
+  padding: 30px 147.5px;
+  margin: 0 4px 0 0;
+  list-style: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "MerriBold", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.resp-tabs-list li:hover {
+  background: #bbdd8e;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96ee21, #bbdd8e);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96ee21, #bbdd8e);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.resp-tabs-list li:active {
+  background: #8cc63f;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96ee21, #8cc63f);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96ee21, #8cc63f);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.resp-tabs-container {
+  margin-top: 20px;
+  padding: 0px;
+  background-color: #fff;
+  clear: left;
+}
+h2.resp-accordion {
+  cursor: pointer;
+  padding: 5px;
+  display: none;
+}
+.resp-tab-content {
+  display: none;
+  padding: 0px;
+}
+/*-----------Vertical tabs-----------*/
+.resp-vtabs ul.resp-tabs-list {
+  float: left;
+  width: 30%;
+}
+.resp-vtabs .resp-tabs-list li {
+  display: block;
+  padding: 15px 0px;
+  margin: 16px 0 5px;
+  text-align: left;
+  cursor: pointer;
+  float: none;
+}
+.resp-vtabs .resp-tabs-list li span {
+  padding-left: 15px;
+  font-family: "MerriRegular", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+.resp-vtabs .resp-tabs-container {
+  padding: 0px;
+  float: left;
+  width: 68%;
+  min-height: 250px;
+  text-align: center;
+  border-radius: 4px;
+  clear: none;
+  background-color: #fff;
+}
+.resp-vtabs .resp-tabs-container img {
+  padding-top: 70px;
+}
+.resp-vtabs .resp-tabs-container p {
+  padding-top: 73px;
+  font-family: "MerriBlack", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.resp-vtabs .resp-tabs-container p span {
+  color: #e54116;
+  font-family: "MerriBlack", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.resp-vtabs .resp-tabs-container button {
+  margin-top: 80px;
+  margin-bottom: 33px;
+  padding: 15px 35px;
+  border: none;
+  background: #8cc63f;
+  font-family: "MerriBlack", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  outline: none;
+}
+.resp-vtabs .resp-tabs-container button:hover {
+  background: #567b24;
+  outline: none;
+}
+.resp-vtabs .resp-tabs-container button:active {
+  background: #8cc63f;
+  outline: none;
+}
+.resp-vtabs .resp-tab-content {
+  border: none;
+  word-wrap: break-word;
+}
+.resp-vtabs li.resp-tab-active {
+  position: relative;
+  z-index: 1;
+}
+.resp-arrow {
+  width: 0;
+  height: 0;
+  float: right;
+  margin-top: 3px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 12px solid #c1c1c1;
+}
+h2.resp-tab-active span.resp-arrow {
+  border: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 12px solid #9B9797;
+}
+/*-----------Accordion styles-----------*/
+h2.resp-tab-active {
+  background: #DBDBDB;
+  /* !important;*/
+}
+.resp-easy-accordion h2.resp-accordion {
+  display: block;
+}
+.resp-easy-accordion .resp-tab-content {
+  border: 1px solid #c1c1c1;
+}
+.resp-easy-accordion .resp-tab-content:last-child {
+  border-bottom: 1px solid #c1c1c1;
+  /* !important;*/
+}
+.resp-jfit {
+  width: 100%;
+  margin: 0px;
+}
+.resp-tab-content-active {
+  display: block;
+}
+h2.resp-accordion:first-child {
+  border-top: 1px solid #c1c1c1;
+  /* !important;*/
+}
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+@media only screen and (max-width: 768px) {
+  ul.resp-tabs-list {
+    display: none;
+  }
+  h2.resp-accordion {
+    display: block;
+  }
+  .resp-vtabs .resp-tab-content {
+    border: 1px solid #C1C1C1;
+  }
+  .resp-vtabs .resp-tabs-container {
+    border: none;
+    float: none;
+    width: 100%;
+    min-height: 100px;
+    clear: none;
+  }
+  .resp-accordion-closed {
+    display: none !important;
+  }
+  .resp-vtabs .resp-tab-content:last-child {
+    border-bottom: 1px solid #c1c1c1 !important;
+  }
+}
+#main-form {
+  background: transparent;
+}

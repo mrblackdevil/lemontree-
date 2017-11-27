@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Lemon Tree Restaraunt</title>
+	<meta name="description" content="Lemon Tree Restaraunt" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="keywords" content="Lemon Tree Restaraunt,restaraunt,food">
+	<meta name="author" content="webskyus">
+	<style>
+	/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)*/html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}
+		/*!
+ * Minify by http://www.MinifyWeb.com/
+ */
+.btn-classic{margin-top:10px;padding:20px
+105px;border:none;outline:none;text-transform:uppercase;font-family:"MerriBold";background:#96ee21}.btn-classic:hover{background:#00df69;color:#fff}.btn-classic:active{background:#009747}.input-classic{margin-bottom:20px;padding:20px
+71.5px;font-family:"BadScript",sans-serif;font-weight:400;font-weight:900;outline:none;background:transparent;border:none;border-bottom:0.75px solid #96ee21}.input-classic::placeholder{font-family:"BadScript",sans-serif;font-weight:400;color:#fff;text-transform:uppercase}.input-classic:-webkit-autofill{-webkit-box-shadow:inset 0 0 0 150px #a1f039 !important}.badscript{font-family:"BadScript",sans-serif;font-weight:400}.merri-light{font-family:"MerriLight",sans-serif;font-weight:300}.merri-light-italick{font-family:"MerriLightItalick",sans-serif;font-weight:300}.merri-reg{font-family:"MerriRegular",sans-serif;font-weight:400}.merri-bold{font-family:"MerriBold",sans-serif;font-weight:700}.merri-bold-italick{font-family:"MerriBoldItalick",sans-serif;font-weight:700}.merri-black{font-family:"MerriBlack",sans-serif;font-weight:900}.merri-black-italick{font-family:"MerriBlackItalick",sans-serif;font-weight:900}.header-box{background:#009245;background:-webkit-linear-gradient(to right, #96ee21, #009245);background:linear-gradient(to right, #96ee21, #009245)}.header-box
+button{width:10%;margin-top:20px;background:none;border:none;outline:none}.header-box button :focus,
+.header-box button :active{outline:none}.header-box button
+img{width:100%}.header-box__logo
+img{width:100%;margin-bottom:20px;padding-top:20px}.header-box__logo img :hover{background:url(../img/logohov.png)}.header-box__list{display:inline-block;padding-left:30px}.header-box__list
+a{display:inline-block;padding:20px
+18px;color:#f2f2f2;border-bottom:0.75px solid #f2f2f2}.header-box__list a:hover{text-decoration:none;color:#ffff42;border-bottom:0.75px solid #ffff42}.header-box__list a:focus,
+.header-box__list a:active{text-decoration:none}.header-box__contacts{padding-top:20px;margin:0}.header-box__contacts
+a{color:#a1f039}.header-box__contacts a:hover{color:#8e8f00;text-decoration:none}.header-content
+h2{padding-top:70px;padding-bottom:20px;font-family:"MerriBlack",sans-serif;font-weight:900;font-size:60px;line-height:1.5;color:#a1f039}.header-content
+input{margin-bottom:20px;padding:20px
+71.5px;font-family:"BadScript",sans-serif;font-weight:400;font-weight:900;outline:none;background:transparent;border:none;border-bottom:0.75px solid #96ee21}.header-content input::placeholder{font-family:"BadScript",sans-serif;font-weight:400;color:#fff;text-transform:uppercase}.header-content input:-webkit-autofill{-webkit-box-shadow:inset 0 0 0 150px #a1f039 !important}.header-content__button{margin-top:10px;padding:20px
+105px;border:none;outline:none;text-transform:uppercase;font-family:"MerriBold";background:#96ee21}.header-content__button:hover{background:#00df69;color:#fff}.header-content__button:active{background:#009747}
+	</style>
+		<!-- Fonts Loader from _fonts.css (HTML5 LocalStorage) -->
+	<script>!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="_fonts.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script>
+</head>
+<body>
+	<header>
+		<div class="for-video-box"></div>
+		<div class="video-container">
+			<div class="filter"></div>
+			<video autoplay loop class="fillWidth">
+				<source src="files/video/MP4/Office-Day.mp4" type="video/mp4" />Ваш браузер не поддерживает видеофон.
+				<source src="files/video/WEBM/Office-Day.webm" type="video/webm" />Ваш браузер не поддерживает видеофон.
+			</video>
+			<div class="poster hidden">
+				<img src="files/video/SnapShots/Office-Day.jpg" alt="">
+			</div>
+		</div>
+		<div class="header-box wow fadeIn">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-xs-offset-3 col-sm-offset-0 col-md-offset-0 col-sm-2 col-md-1">
+						<div class="header-box__logo wow bounceIn">
+							<h1 class="hidden">Limon tree restaraunt</h1>
+							<a href="#"><img src="img/logo.png" alt="Limon Tree restaraunt"></a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-7 col-md-9">
+						<div class="header-box__navigate wow bounceIn">
+							<button class="header-box_button hidden-md hidden-lg"><img src="img/menu.svg" alt=""></button>
+							<ul class="header-box__item">
+								<li class="header-box__list header-box__list--active"><a href="#">Home</a></li>
+								<li class="header-box__list"><a href="#menu" class="ancLinks">Menu</a></li>
+								<li class="header-box__list"><a href="#subscribe-food" class="ancLinks">Food Subscription</a></li>
+								<li class="header-box__list"><a href="#reserve-table" class="ancLinks">Reservation</a></li>
+								<li class="header-box__list"><a href="#special" class="ancLinks">Special</a></li>
+								<li class="header-box__list"><a href="#contacts" class="ancLinks">Contacts</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6 col-xs-offset-3 col-sm-offset-0 col-md-offset-0 col-sm-3 col-md-2">
+						<div class="header-box__contacts wow bounceIn">
+							<a href="tel: +1234567890">(00) 000 00-01</a><br>
+							<a href="tel: +1234567890">(00) 000 00-02</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-content">
+			<div class="container">
+				<div class="row wow bounceIn">
+					<div class="col-md-6">
+						<h2>A restaurant for the whole family.</h2>
+					</div>
+				</div>
+				<div class="row wow pulse">
+					<div class="col-md-12">
+						<form action="#" id="header-content__main-form">
+							<input type="hidden" name="whatever">
+							<input type="text" name="username" placeholder="Your Name" required><br>
+							<input type="text" name="phone" id="phone" placeholder="Your Number" required><br>
+							<button class="header-content__button">deliver food!</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="menu" class="menu-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 section-header wow pulse">
+					<h2><span>Menu</span> List</h2>
+					<p>The most delicious food in one place.</p>
+				</div>  	  <!-- /col-lg-12 -->
+			</div>      	<!-- /row -->
+			<div class="row wow swing">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="twb-tabs">
+							<div class="col-md-2">
+								<ul class="twb-tablist">
+									<li class="active"><a href=".tab1" data-toggle="tab">Starters</a></li>
+									<li><a href="[name='tab2']" data-toggle="tab">Main Dishes</a></li>
+									<li><a href="[title='tab3']" data-toggle="tab">Dessert &nbsp;&nbsp;&nbsp;</a></li>
+									<li><a href="[role='tab4']" data-toggle="tab">Drinks</a></li>
+								</ul>				
+							</div>
+							<div class="col-md-10">
+								<div class="twb-tab-content tab-content">
+									<div class="tab-pane fade tab1 in active">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="products">
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>	
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>
+												</div>
+											</div>		
+											<div class="col-md-6">
+												<div class="products">
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>	
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>
+												</div>
+											</div>		
+										</div>
+									</div>
+									<div name="tab2" class="tab-pane fade">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="products">
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>	
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>
+												</div>
+											</div>		
+											<div class="col-md-6">
+												<div class="products">
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................19$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>	
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................19$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................19$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................19$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................19$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>
+													<div class="products__item">
+														<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................19$</span></p>
+														<p class="products__description">ricotta, shallots, cheddar, capers</p>
+													</div>
+												</div>
+											</div>		
+										</div></div>
+										<div title="tab3" class="tab-pane fade">									
+											<div class="row">
+												<div class="col-md-6">
+													<div class="products">
+														<div class="products__item">
+															<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................14$</span></p>
+															<p class="products__description">ricotta, shallots, cheddar, capers</p>
+														</div>	
+														<div class="products__item">
+															<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................14$</span></p>
+															<p class="products__description">ricotta, shallots, cheddar, capers</p>
+														</div>
+														<div class="products__item">
+															<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................14$</span></p>
+															<p class="products__description">ricotta, shallots, cheddar, capers</p>
+														</div>
+														<div class="products__item">
+															<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................14$</span></p>
+															<p class="products__description">ricotta, shallots, cheddar, capers</p>
+														</div>
+														<div class="products__item">
+															<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................14$</span></p>
+															<p class="products__description">ricotta, shallots, cheddar, capers</p>
+														</div>
+														<div class="products__item">
+															<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................14$</span></p>
+															<p class="products__description">ricotta, shallots, cheddar, capers</p>
+														</div>
+													</div>
+												</div>		
+												<div class="col-md-6">
+													<div class="products">
+														<div class="products__item">
+															<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................72$</span></p>
+															<p class="products__description">ricotta, shallots, cheddar, capers</p>
+														</div>	
+														<div class="products__item">
+															<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................17$</span></p>
+															<p class="products__description">ricotta, shallots, cheddar, capers</p>
+														</div>
+														<div class="products__item">
+															<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................17$</span></p>
+															<p class="products__description">ricotta, shallots, cheddar, capers</p>
+														</div>
+														<div class="products__item">
+															<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................17$</span></p>
+															<p class="products__description">ricotta, shallots, cheddar, capers</p>
+														</div>
+														<div class="products__item">
+															<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................17$</span></p>
+															<p class="products__description">ricotta, shallots, cheddar, capers</p>
+														</div>
+														<div class="products__item">
+															<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................17$</span></p>
+															<p class="products__description">ricotta, shallots, cheddar, capers</p>
+														</div>
+													</div>
+												</div>		
+											</div></div>
+											<div role="tab4" class="tab-pane fade">									
+												<div class="row">
+													<div class="col-md-6">
+														<div class="products">
+															<div class="products__item">
+																<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+																<p class="products__description">ricotta, shallots, cheddar, capers</p>
+															</div>	
+															<div class="products__item">
+																<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+																<p class="products__description">ricotta, shallots, cheddar, capers</p>
+															</div>
+															<div class="products__item">
+																<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+																<p class="products__description">ricotta, shallots, cheddar, capers</p>
+															</div>
+															<div class="products__item">
+																<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+																<p class="products__description">ricotta, shallots, cheddar, capers</p>
+															</div>
+															<div class="products__item">
+																<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+																<p class="products__description">ricotta, shallots, cheddar, capers</p>
+															</div>
+															<div class="products__item">
+																<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+																<p class="products__description">ricotta, shallots, cheddar, capers</p>
+															</div>
+														</div>
+													</div>		
+													<div class="col-md-6">
+														<div class="products">
+															<div class="products__item">
+																<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+																<p class="products__description">ricotta, shallots, cheddar, capers</p>
+															</div>	
+															<div class="products__item">
+																<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+																<p class="products__description">ricotta, shallots, cheddar, capers</p>
+															</div>
+															<div class="products__item">
+																<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+																<p class="products__description">ricotta, shallots, cheddar, capers</p>
+															</div>
+															<div class="products__item">
+																<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+																<p class="products__description">ricotta, shallots, cheddar, capers</p>
+															</div>
+															<div class="products__item">
+																<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+																<p class="products__description">ricotta, shallots, cheddar, capers</p>
+															</div>
+															<div class="products__item">
+																<p class="products__name">SMOKED RICOTTA TERRINE <span>.......................12$</span></p>
+																<p class="products__description">ricotta, shallots, cheddar, capers</p>
+															</div>
+														</div>
+													</div>		
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>   			  <!-- /container -->
+			</section>   			<!-- /section -->
+			<section id="subscribe-food">
+				<div class="container">
+					<div class="row wow bounceInLeft">
+						<div class="col-md-12 section-header text-center">
+							<h2>Food <span>Subscription</span></h2>
+							<p>Subscription for those who are tired of cooking. Spending time on more important than cooking food.</p>
+						</div>  	  <!-- /col-lg-12 -->
+					</div>      	<!-- /row -->
+					<div class="row wow bounceInRight">
+						<div class="tabs_block">
+							<div class="col-md-12">
+								<div id="parentHorizontalTab">
+									<ul class="resp-tabs-list hor_1">
+										<li>Breakfast</li>
+										<li>Lunch</li>
+										<li>Dinner</li>
+									</ul>
+								</div>
+								<div class="resp-tabs-container hor_1">
+									<!--vertical Tabs-->
+									<div id="ChildVerticalTab_1">
+										<ul class="resp-tabs-list ver_1">
+											<li><img src="img/mini-food-pic.png" alt=""><span>Cinnamon Cluster</span></li>
+											<li><img src="img/mini-food-pic-2.png" alt=""><span>Bacon, Egg & Cheese...</span></li>
+											<li><img src="img/mini-food-pic-3.png" alt=""><span>Chicken Breakfast...</span></li>
+											<li><img src="img/mini-food-pic-4.png" alt=""><span>Bacon roll</span></li>
+											<li><img src="img/mini-food-pic-5.png" alt=""><span>Chicken Platter</span></li>
+											<li><img src="img/mini-food-pic-6.png" alt=""><span>Hash Browns</span></li>
+										</ul>
+										<div class="resp-tabs-container ver_1">
+											<div>
+												<img src="img/1.png" alt="food">
+												<p>Cinnamon Cluster <br>	 <span>$20</span></p>
+												<button class="order-popup">Order now</button>
+											</div>
+											<div>
+												<img src="img/-food-pic.png" alt="food">
+												<p>Bacon, Egg & Cheese Biscuit <br>	 <span>$10</span></p>
+												<button class="order-popup">Order now</button>
+											</div>
+											<div>
+												<img src="img/2.png" alt="food">
+												<p>Chicken Breakfast... <br>	 <span>$15</span></p>
+												<button class="order-popup">Order now</button>
+											</div>
+											<div>
+												<img src="img/3.png" alt="food">
+												<p>Bacon roll <br>	 <span>$25</span></p>
+												<button class="order-popup">Order now</button>
+											</div>
+											<div>
+												<img src="img/4.png" alt="food">
+												<p>Chicken Platter <br>	 <span>$40</span></p>
+												<button class="order-popup">Order now</button>
+											</div>
+											<div>
+												<img src="img/5.png" alt="food">
+												<p>Hash Browns <br>	 <span>$35</span></p>
+												<button class="order-popup">Order now</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>   			  <!-- /container -->
+</section>   			<!-- /section -->
+<section id="reserve-table" class="reserv">
+	<div class="container">
+		<div class="row wow bounceInRight">
+			<div class="col-lg-12 section-header text-center">
+				<h2>Reservation <span>of table </span> </h2>
+				<p>Book a table when and how convenient. A convenient place to book in our restaurant is by clicking the mouse.</p>
+			</div>  	  <!-- /col-lg-12 -->
+		</div>      	<!-- /row -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row wow bounceInLeft">
+					<div class="col-md-12">
+						<p class="reserv__title">Select your dining space</p>
+						<ul class="reserv__list">
+							<li class="reserv__item reserv__item--active">
+								<div class="reserv__images"></div>
+								<p>02 <br> Person</p>
+							</li>								
+							<li class="reserv__item" >
+								<div class="reserv__images reserv__images--img1"></div>
+								<p>03 <br> Person</p>
+							</li>										
+							<li class="reserv__item" >
+								<div class="reserv__images reserv__images--img2"></div>
+								<p>04 <br> Person</p>
+							</li>					
+							<li class="reserv__item" >
+								<div class="reserv__images reserv__images--img3"></div>
+								<p> ∞<br>Custom</p>
+							</li>
+						</ul>
+					</div>
+				</div>							
+				<div class="row reserv__data wow bounceInRight">
+					<div class="col-md-12">
+						<div class="col-md-4">
+							<p class="reserv__title">Date & Time</p>
+							<input type="datetime-local">		
+						</div>
+						<div class="col-md-4">
+							<p class="reserv__title">Occasion</p>
+							<select name="state">
+								<option value="AL">Anniversary</option>
+								<option value="WY">Anniversary</option>
+								<option value="WY">Anniversary</option>
+								<option value="WY">Anniversary</option>
+								<option value="WY">Anniversary</option>
+							</select>
+						</div>
+						<div class="col-md-4">
+							<p class="reserv__title">Preferred Food</p>
+							<select name="state">
+								<option value="AL">Bangladeshi Food	</option>
+								<option value="WY">Bangladeshi Food	</option>
+								<option value="WY">Bangladeshi Food	</option>
+								<option value="WY">Bangladeshi Food	</option>
+								<option value="WY">Bangladeshi Food	</option>
+							</select>
+						</div>
+					</div>
+				</div>						
+				<div class="row reserv__data wow bounceInLeft">
+					<div class="col-md-12">
+						<div class="col-md-4">
+							<p class="reserv__title">Your Name</p>
+							<input type="text" name="name" placeholder="Your Name">
+						</div>
+						<div class="col-md-4">
+							<p class="reserv__title">Phone Number</p>
+							<input type="text" name="phone" id="phone1" placeholder="Your Number" required>
+						</div>
+						<div class="col-md-4">
+							<p class="reserv__title">E-mail ID</p>
+							<input type="email" name="email" placeholder="Your Email" required>
+						</div>
+					</div>
+				</div>
+				<div class="row wow fadeIn">
+					<div class="col-md-8">
+						<p class="reserv__text">It's all about good food. Enjoy our delicious food</p>
+					</div>
+					<div class="col-md-4">
+						<button class="reserv__button">order now</button>
+					</div>
+				</div>			
+			</div>
+		</div>	
+	</div>   			  <!-- /container -->
+</section>   			<!-- /section -->
+<section id="special" class="special">
+	<div class="container">
+		<div class="row wow swing">
+			<div class="col-lg-12 section-header text-center">
+				<h2>The most delicious <span>dishes of this month </span> </h2>
+				<p>Сooking for us is the process of creation.</p>
+			</div>  	  <!-- /col-lg-12 -->
+		</div>      	<!-- /row -->
+		<div class="row special__container special__container--border">
+			<div class="col-md-12">
+				<div class="row wow swing">
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class="special__products">
+							<img src="img/ab-1.png" alt="Food">
+							<div class="special__text">
+								<h4>Greens fava</h4>
+								<p>Lorem ipsum dolor sit 
+									Pellentesque vel enim a
+								</p>
+								<b>17$</b>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class="special__products">
+							<img src="img/ab-2.png" alt="Food">
+							<div class="special__text">
+								<h4>Celery quandong</h4>
+								<p>Lorem ipsum dolor sit 
+									Pellentesque vel enim a
+								</p>
+								<b>37$</b>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class="special__products">
+							<img src="img/ab-3.png" alt="Food">
+							<div class="special__text">
+								<h4>Pea horseradish</h4>
+								<p>Lorem ipsum dolor sit 
+									Pellentesque vel enim a
+								</p>
+								<b>27$</b>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row wow bounceInRight">
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class="special__bottom-box">
+							<div class="special__text-inner">
+								<h4>Greens fava</h4>
+								<p>Lorem ipsum dolor sit 
+									Pellentesque vel enim a
+								</p>
+								<b>17$</b>
+							</div>
+							<img src="img/ab-4.png" alt="Food">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class="special__bottom-box">
+							<div class="special__text-inner">
+								<h4>Greens fava</h4>
+								<p>Lorem ipsum dolor sit 
+									Pellentesque vel enim a
+								</p>
+								<b>17$</b>
+							</div>
+							<img src="img/ab-5.png" alt="Food">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class="special__bottom-box">
+							<div class="special__text-inner">
+								<h4>Greens fava</h4>
+								<p>Lorem ipsum dolor sit 
+									Pellentesque vel enim a
+								</p>
+								<b>17$</b>
+							</div>
+							<img src="img/ab-6.png" alt="Food">
+						</div>
+					</div>
+				</div>
+				<div class="row wow bounceInLeft">
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class="special__products">
+							<img src="img/ab-1.png" alt="Food">
+							<div class="special__text">
+								<h4>Greens fava</h4>
+								<p>Lorem ipsum dolor sit 
+									Pellentesque vel enim a
+								</p>
+								<b>17$</b>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class="special__products">
+							<img src="img/ab-2.png" alt="Food">
+							<div class="special__text">
+								<h4>Celery quandong</h4>
+								<p>Lorem ipsum dolor sit 
+									Pellentesque vel enim a
+								</p>
+								<b>37$</b>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class="special__products">
+							<img src="img/ab-3.png" alt="Food">
+							<div class="special__text">
+								<h4>Pea horseradish</h4>
+								<p>Lorem ipsum dolor sit 
+									Pellentesque vel enim a
+								</p>
+								<b>27$</b>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row wow bounceInRight">
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class="special__bottom-box">
+							<div class="special__text-inner">
+								<h4>Greens fava</h4>
+								<p>Lorem ipsum dolor sit 
+									Pellentesque vel enim a
+								</p>
+								<b>17$</b>
+							</div>
+							<img src="img/ab-4.png" alt="Food">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class="special__bottom-box">
+							<div class="special__text-inner">
+								<h4>Greens fava</h4>
+								<p>Lorem ipsum dolor sit 
+									Pellentesque vel enim a
+								</p>
+								<b>17$</b>
+							</div>
+							<img src="img/ab-5.png" alt="Food">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class="special__bottom-box">
+							<div class="special__text-inner">
+								<h4>Greens fava</h4>
+								<p>Lorem ipsum dolor sit 
+									Pellentesque vel enim a
+								</p>
+								<b>17$</b>
+							</div>
+							<img src="img/ab-6.png" alt="Food">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>   			  <!-- /container -->
+</section>   			<!-- /section -->
+<section id="advantages-box" class="advantages">
+	<div class="container">
+		<div class="row wow fadeInDown">
+			<div class="col-lg-12 section-header text-center">
+				<h2>Advantages<span> </span> </h2>
+				<p>Lorem ipsum dolor sit amet consectet ur adipiscing elit  Vestibulum bibend um vestibulum.</p>
+			</div>  	  <!-- /col-lg-12 -->
+		</div>      	<!-- /row -->
+		<div class="row wow fadeInDown">
+			<div class="col-md-3">
+				<div class="advantages__inner">
+					<div class="advantages__images"></div>
+					<h4>Turnip greens</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sequi inventore cupiditate nesciunt nostrum quidem temporibus, officia rem deserunt accusamus.</p>
+				</div>
+			</div>
+			<div class="col-md-3  wow fadeInDown">
+				<div class="advantages__inner">
+					<div class="advantages__images advantages__images--link1"></div>
+					<h4>Turnip greens</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sequi inventore cupiditate nesciunt nostrum quidem temporibus, officia rem deserunt accusamus.</p>
+				</div>
+			</div>			
+			<div class="col-md-3 wow fadeInDown">
+				<div class="advantages__inner">
+					<div class="advantages__images advantages__images--link2"></div>
+					<h4>Turnip greens</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sequi inventore cupiditate nesciunt nostrum quidem temporibus, officia rem deserunt accusamus.</p>
+				</div>
+			</div>			
+			<div class="col-md-3 wow fadeInDown">
+				<div class="advantages__inner">
+					<div class="advantages__images advantages__images--link3"></div>
+					<h4>Turnip greens</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sequi inventore cupiditate nesciunt nostrum quidem temporibus, officia rem deserunt accusamus.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 wow fadeInDown">
+				<div class="advantages__inner">
+					<div class="advantages__images advantages__images--link4"></div>
+					<h4>Turnip greens</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sequi inventore cupiditate nesciunt nostrum quidem temporibus, officia rem deserunt accusamus.</p>
+				</div>
+			</div>	
+			<div class="col-md-3 wow fadeInDown">
+				<div class="advantages__inner">
+					<div class="advantages__images advantages__images--link5"></div>
+					<h4>Turnip greens</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sequi inventore cupiditate nesciunt nostrum quidem temporibus, officia rem deserunt accusamus.</p>
+				</div>
+			</div>	
+			<div class="col-md-3 wow fadeInDown">
+				<div class="advantages__inner">
+					<div class="advantages__images advantages__images--link6"></div>
+					<h4>Turnip greens</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sequi inventore cupiditate nesciunt nostrum quidem temporibus, officia rem deserunt accusamus.</p>
+				</div>
+			</div>	
+			<div class="col-md-3 wow fadeInDown">
+				<div class="advantages__inner">
+					<div class="advantages__images advantages__images--link7"></div>
+					<h4>Turnip greens</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sequi inventore cupiditate nesciunt nostrum quidem temporibus, officia rem deserunt accusamus.</p>
+				</div>
+			</div>	
+		</div>
+	</div>   			  <!-- /container -->
+</section>   			<!-- /section -->
+<section id="contacts" class="main-contacts">
+	<div class="container">
+		<div class="row wow fadeInLeft">
+			<div class="col-lg-5 col-md-offset-7 section-header text-center">
+				<h2>Contacts<span> </span> </h2>
+				<p>Lorem ipsum dolor sit amet consectet ur adipiscing elit  Vestibulum bibend um vestibulum.</p>
+			</div>  	  <!-- /col-lg-12 -->
+		</div>      	<!-- /row -->
+		<div class="row wow fadeInRight">
+			<div class="col-lg-5 col-md-offset-7">
+				<div class="row main-contacts__adress">
+					<div class="col-md-6 ">
+						<h3>Restaraund Adress</h3>
+						<p>
+							3428 Baku Lorem, 
+							Lorem, NJ 778999, lorem new street
+						</p>
+					</div>
+					<div class="col-md-6">
+						<h3>Reservation</h3>
+						<p>reservations@lorem.com</p>
+						<a href="#">
+							+48 202-555-0114
+						</a>
+					</div>
+				</div><br>
+				<div class="row main-contacts__adress">
+					<div class="col-md-6 ">
+						<h3>Working hour</h3>
+						<p>
+							8:00/00:00
+						</p>
+					</div>
+					<div class="col-md-6">
+						<h3>Social</h3>
+						<a href="#" class="main-contacts__social main-contacts__social--images1">
+						</a>
+						<a href="#" class="main-contacts__social main-contacts__social--images2">
+						</a>						
+						<a href="#" class="main-contacts__social main-contacts__social--images3">
+						</a>
+					</div>
+				</div>
+				<div class="row main-contacts__form wow fadeInUp">
+					<div class="col-md-12">
+						<h3>Contact form</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<input type="text" name="name" placeholder="Your Name" required>
+							</div>
+							<div class="col-md-6">
+								<input type="text" name="email" placeholder="Your Email" required>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<textarea name="message" placeholder="Your Message" required></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<button>Sent</button>
+							</div>
+							<div class="col-md-6">
+								<a href="https://snazzymaps.com/embed/30239" class="maps">View in map</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> 
+		</div>
+	</div>   			  <!-- /container -->
+</section>   			<!-- /section -->
+<footer>
+	<div class="container">
+		<div class="row wow fadeInRight">
+			<div class="col-md-12">
+				<h4>Copyright 2017 ©  by WebSkyUS</h4>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- PopUP Blokc Section -->
+<div class="totop">&uarr;</div>
+<div class="hidden">
+	<div id="popup-main" class="mfp-ready">
+		<form action="#" id="main-form">
+			<h3>Sent your Message</h3>
+			<input type="hidden" name="whatever" value="Главная Форма"><br>
+			<input type="text" name="username" placeholder="Your Name" required><br>
+			<input type="text" name="email" placeholder="Your Email" required><br>
+			<input type="text" name="phone" id="phone2" placeholder="Your phone number" required><br>
+			<textarea  name="user_message" placeholder="Your Message"></textarea><br>
+			<button type="submit" class="main-form__inner__btn">Sent Message &rarr;</button>
+		</form>
+	</div>
+</div>
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<!-- Link Files -->
+<link rel="shortcut icon" href="img/favicon.ico" />
+<link rel="stylesheet"    href="css/normalize.css" />
+<link rel="stylesheet"    href="css/fonts.css" />
+<link rel="stylesheet"    href="css/main.css" />
+<link rel="stylesheet"    href="css/media.css" />
+<link rel="stylesheet"    href="libs/magnpopup/magnific-popup.css">
+<link rel="stylesheet"    href="libs/wowjs/animate.css">
+<link rel="stylesheet"    href="libs/scrollpage/style.css">
+<link rel="stylesheet"    href="libs/select/css/select2.min.css">
+<!-- /Link Files -->
+<!-- Script Files -->
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/magnpopup/jquery.magnific-popup.min.js"></script>
+<script src="libs/scrollpage/totop.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="libs/popover/popover.js.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="libs/musk/jquery.maskedinput.min.js"></script>
+<script src="libs/select/js/select2.full.min.js"></script>
+<script src="libs/wowjs/wow.min.js"></script>
+<script src="libs/adaptivemenu/script.js"></script>
+<script src="libs/tab/tabs.js"></script>
+<script src="libs/tab/twb-tabs.js"></script>
+<script src="js/main.js"></script>
+<script>
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+</script>
+<script>
+	new WOW().init();
+</script>
+<!--/Script Files  -->
+
+<!-- Метрика для сайта -->
+<!-- Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter -->
+
+<!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter -->
+
+<!-- Google Analytics counter -->
+<!-- /Google Analytics counter -->
+
+<!-- Callback и другие плагины для обратной связи -->
+</body>
+</html>

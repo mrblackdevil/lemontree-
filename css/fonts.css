@@ -1,0 +1,51 @@
+/* font-family: "Az"; */
+@font-face {
+	font-family: "az";
+	src: url("../fonts/az/azeri-latin.TTF") format("truetype");
+}
+/* font-family: "Merriweather-Light"; */
+@font-face {
+	font-family: "MerriLight";
+	src: url('../fonts/merri/Merriweather-Light.ttf') format("truetype");
+	
+}
+/* font-family: "Merriweather-Lightitalick"; */
+@font-face {
+	font-family: "MerriLightItalick";
+	src: url('../fonts/merri/Merriweather-LightItalic.ttf') format("truetype");
+	
+}
+/* font-family: "Merriweather-Regular"; */
+@font-face {
+	font-family: "MerriRegular";
+	src: url('../fonts/merri/Merriweather-Regular.ttf') format("truetype");
+	
+}
+/* font-family: "Merriweather-Bold"; */
+@font-face {
+	font-family: 'MerriBold';
+	src: url('../fonts/merri/Merriweather-Bold.ttf') format("truetype");
+	
+}
+/* font-family: "Merriweather-BoldItalick"; */
+@font-face {
+	font-family: "MerriBoldItalick";
+	src: url('../fonts/merri/Merriweather-BoldItalic.ttf') format("truetype");
+	
+}
+/* font-family: "Merriweather-Black"; */
+@font-face {
+	font-family: "MerriBlack";
+	src: url('../fonts/merri/Merriweather-Black.ttf') format("truetype");
+	
+}
+/* font-family: "Merriweather-BlackItalick"; */
+@font-face {
+	font-family: "MerriBlackItalick";
+	src: url('../fonts/merri/Merriweather-BlackItalic.ttf') format("truetype");
+}
+/* font-family: "BadScript"; */
+@font-face {
+	font-family: "BadScript";
+	src: url("../fonts/badscript/BadScript-Regular.ttf") format("truetype");
+}

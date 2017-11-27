@@ -1,0 +1,186 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.container {
+		overflow: hidden;
+	}
+	.resp-tabs-list li {
+		padding: 20px 80px;
+	}	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.container {
+		overflow: hidden;
+	}
+		.video-container {
+		display: none;
+	}	
+	.header-content {
+		background: url(../img/hip-square.png);
+	}
+	.header-content h2 {
+		font-size: 30px;
+	}
+	.header-content input {
+		padding: 0;
+	}
+		.header-content input::placeholder {
+		color: #000;	
+		font-family: "MerriRegular",sans-serif;
+		font-size: 14px;
+		color: #777;
+	}
+	.header-content button {
+		padding: 20px 80px;
+	}
+	.resp-vtabs .resp-tabs-list li {
+		padding-top: 25.5px;
+	}
+	.resp-vtabs .resp-tabs-list li span {
+		font-size: 12px;
+		padding-left: 10px;
+	}
+	.resp-vtabs .resp-tabs-list li img {
+		width: 25%;
+	}
+	.resp-vtabs .resp-tabs-container img {
+		padding-top: 0;
+	}
+	.resp-vtabs .resp-tabs-container button {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.for-video-box {
+		background: url(../img/hip-square.png);
+	}
+	.menu-box h2 {
+		padding-top: 20px;
+	}
+		.special__products img {
+		width: 40%;
+	}
+	.special__text p {
+		padding-bottom: 159px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.container {
+		overflow: hidden;
+	}
+	.video-container {
+		display: none;
+	}	
+	.for-video-box {
+		display: none;
+	}
+	.header-box__logo {
+		text-align: center;
+	}
+	.header-box__logo img {
+		width: 50%;
+	}
+	.header-box__contacts {
+		text-align: center;
+		padding-right: 10%;
+	}
+	.header-box_button  {
+		margin-left: 45%;
+	}
+	.header-content input::placeholder {
+		color: #000;	
+		font-family: "MerriRegular",sans-serif;
+		font-size: 14px;
+		color: #777;
+	}
+	.header-content {
+		background: url(../img/ricepaper2.png);
+	}
+	.special__products img {
+		width: 40%;
+	}
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.container {
+		overflow: hidden;
+	}
+	.video-container {
+		display: none;
+	}	
+	.header-box__item {
+		display: none;
+		text-align: center;
+	}
+	.for-video-box {
+		display: none;
+	}
+	.header-box_button  {
+		margin-left: 45%;
+	}
+	.header-content input::placeholder {
+		color: #000;	
+		font-family: "MerriRegular",sans-serif;
+		font-size: 14px;
+		color: #777;
+	}
+	.header-content {
+		background: url(../img/ricepaper2.png);
+	}
+	.header-box__contacts {
+		float: right;
+		margin-right: 30px;
+		margin-top: 15px;
+	}
+	.resp-tabs-container img {
+		width: 70%;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	.header-box__item {
+		display: inline-block !important; 
+	}
+	.header-box_button {
+		display: none;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.for-video-box {
+		display: block !important;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
